@@ -62,8 +62,8 @@
 			</div>
 		</div>
 		<div class="copy-w3-agileits">
-                    <h2 class="footer-logo"><a href="index.php">Stretch <span>Online Education</span></a></h2>
-			<p>© 2018 Stay at College . All Rights Reserved | <a href="http://w3layouts.com/">W3layouts</a> </p>
+                    <h2 class="footer-logo"><a href="index.php">Stay At College <span>Online Education</span></a></h2>
+			<p>© 2018 Stay at College . All Rights Reserved |  </p>
 			<div class="clearfix"></div>
 		</div>
 	</div>

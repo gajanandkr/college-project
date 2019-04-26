@@ -1,9 +1,3 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 
@@ -83,12 +77,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<input type="text" placeholder="Your Name" name="Your name" required="">
 							</div>
 							<div class="styled-input">
-								<input id="datepicker" placeholder="Birth Date" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
-								    required="">
+                                                            <input placeholder="Birth Date"  style="width: 100%;margin-bottom: 15px" name="Text" type="text" value="" onfocus="(this.type='date')" onblur="(this.type='text')" required="">
 							</div>
-							<div class="styled-input agile-styled-input-top">
+							<div class=" agile-styled-input-top">
 								<select class="category2" required="">
-												<option value="">Gender</option>
+                                                                    <option value="" hidden="">Gender</option>
 												<option value="">Female</option>
 												<option value="">Male</option>
 												<option value="">Other</option>
@@ -100,28 +93,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="styled-input">
 								<input type="text" placeholder="Phone Number" name="Phone" required="">
 							</div>
+                                                        <div class="styled-input">
+								<input type="text" placeholder="College Roll no" name="roll" required="">
+							</div>
 							<div class="styled-input agile-styled-input-top">
 								<select class="category2" required="">
-												<option value="">Select Branch</option>
-												<option value="">Web Designing</option>
-												<option value="">Web Technology </option>
-												<option value="">PC Systems </option>
-												<option value="">IT Foundations </option>
-												<option value="">HR Management </option>
-												<option value="">Modeling </option>
-												<option value="">Basic Marketing</option>
+                                                                    <option value="" hidden="">Select Branch</option>
+												<option value="">IT</option>
+												<option value="">CSE </option>
+												<option value="">ME</option>
+												<option value="">ECE </option>
+												<option value="">AEIE </option>
+												<option value="">EE </option>
+												<option value="">CE</option>
 											</select>
 								<span></span>
 							</div>
 							<div class="styled-input">
 								<div class="agileits_w3layouts_grid">
 									<select class="category2" name="category1" required="">
-													<option value="">Select Course Time</option>
-													<option value="">Hours: 8am - 10am</option>
-													<option value="">Hours: 10am - 12pm</option>
-													<option value="">Hours: 12pm - 4pm</option>
-													<option value="">Hours: 4pm - 7pm</option>
-													<option value="">Hours: 7pm - 9pm</option>
+													<option value="">Select Session</option>
+													<option value="">2015-19</option>
+													<option value="">2016-20</option>
+													<option value="">2017-21</option>
+													<option value="">2018-22</option>
+													<option value="">2019-23</option>
+                                                                                                        <option value="">2020-24</option>
 												</select>
 								</div>
 							</div>
@@ -136,75 +133,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!--//inner_connectent-->
 	<!--footer-->
-	<div class="contact-footer-w3layouts-agile">
-
-		<div class="bottom-social-agileits-w3ls">
-			<div class="container">
-				<div class="col-md-8 botttom-nav-w3ls-agileits">
-					<ul class="f_links col-md-4">
-						<li>
-							<a href="index.php">Home</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="services.php">Services</a>
-						</li>
-						<li>
-                                                    <a href="courses.php">Courses</a>
-						</li>
-						<li>
-                                                    <a href="contact.php">Contact</a>
-						</li>
-					</ul>
-					<ul class="f_links col-md-4">
-						<li>
-							<a href="index.php">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Blog</a>
-						</li>
-						<li>
-							<a href="404.html">Careers</a>
-						</li>
-						<li>
-                                                    <a href="services.php">Services</a>
-						</li>
-
-					</ul>
-					<ul class="f_links thrd col-md-4">
-						<li>
-							<a href="index.php">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Events</a>
-						</li>
-						<li>
-							<a href="app.html">Mobile App</a>
-						</li>
-
-
-					</ul>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-md-4 social-icons-wthree">
-					<h6>Connect with us</h6>
-					<a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
-					<a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
-					<a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
-					<a class="linkedin" href="#"><span class="fa fa-linkedin"></span></a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-		</div>
-		<div class="copy-w3-agileits">
-			<h2 class="footer-logo"><a href="index.php">Stretch <span>Online Education</span></a></h2>
-			<p>© 2018 Stretch . All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+	<?php include_once 'head/footer.php'; ?>
 	<!--/footer -->
 	<!-- js -->
 	

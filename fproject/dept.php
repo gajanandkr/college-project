@@ -42,10 +42,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <br>
         <h1><center>Hey! Your Department</center></h1>
         <div align="center"><br><br>
-            <div class="btn">Computer Science & Engineering</div>
-            <div class="btn">Information Technology</div>
-            <div class="btn">Electronics & Communication</div>
-            <div class="btn">Electrical Engineering</div>
+            <div>
+                <a href="#" class="btn">Computer Science & Engineering</a>
+                <a href="#" class="btn">Information Technology</a>
+                <a href="#" class="btn">Electronics & Communication</a>
+                <a href="#" class="btn">Electrical Engineering</a>
+            </div>
             <br>
             <br>
             <div class="btn">AEIE</div>
