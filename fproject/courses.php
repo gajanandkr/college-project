@@ -51,48 +51,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-	<div class="header inner_banner" id="home">
-		<!--/top-bar-->
-		<div class="top-bar">
-			<div class="header-nav-agileits">
-
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-						<h1><a class="navbar-brand" href="index.html">Stretch <span>Online Education</span></a></h1>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-						<nav>
-							<ul class="top_nav">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Drop Down <span class="fa fa-angle-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="services.html">Services</a></li>
-										<li><a href="join.php">Join now</a></li>
-									</ul>
-								</li>
-								<li><a href="courses.html" class="active">Courses</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</nav>
-
-			</div>
-		</div>
-		<!--//top-bar-->
-		<!--/ banner-text -->
-		<!--// banner-text -->
-	</div>
+	<?php include_once 'head/othnav.php'; 
+    include_once 'head/signmodal.php';
+    ?>
 	<!--//inner_banner-->
 	<!--/short-->
 	<div class="services-breadcrumb-w3ls-agile">
@@ -278,75 +239,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!--//inner_connectent-->
 	<!--footer-->
-	<div class="contact-footer-w3layouts-agile">
-
-		<div class="bottom-social-agileits-w3ls">
-			<div class="container">
-				<div class="col-md-8 botttom-nav-w3ls-agileits">
-					<ul class="f_links col-md-4">
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-                                                    <a href="services.php">Services</a>
-						</li>
-						<li>
-                                                    <a href="courses.php">Courses</a>
-						</li>
-						<li>
-                                                    <a href="contact.php">Contact</a>
-						</li>
-					</ul>
-					<ul class="f_links col-md-4">
-						<li>
-							<a href="index.html">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Blog</a>
-						</li>
-						<li>
-							<a href="404.html">Careers</a>
-						</li>
-						<li>
-							<a href="services.html">Services</a>
-						</li>
-
-					</ul>
-					<ul class="f_links thrd col-md-4">
-						<li>
-							<a href="index.html">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Events</a>
-						</li>
-						<li>
-							<a href="app.html">Mobile App</a>
-						</li>
-
-
-					</ul>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-md-4 social-icons-wthree">
-					<h6>Connect with us</h6>
-					<a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
-					<a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
-					<a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
-					<a class="linkedin" href="#"><span class="fa fa-linkedin"></span></a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-		</div>
-		<div class="copy-w3-agileits">
-			<h2 class="footer-logo"><a href="index.html">Stretch <span>Online Education</span></a></h2>
-			<p>© 2018 Stretch . All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+	<?php include_once 'head/footer.php'; ?>
 	<!--/footer -->
 
 

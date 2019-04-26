@@ -1,9 +1,3 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 
@@ -51,49 +45,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-	<div class="header inner_banner" id="home">
-		<!--/top-bar-->
-		<div class="top-bar">
-			<div class="header-nav-agileits">
-
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-						<h1><a class="navbar-brand" href="index.php">Stretch <span>Online Education</span></a></h1>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-						<nav>
-							<ul class="top_nav">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Drop Down <span class="fa fa-angle-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="services.php">Services</a></li>
-										<li><a href="join.php">Join now</a></li>
-									</ul>
-								</li>
-                                                                <li><a href="courses.php">Courses</a></li>
-								<li><a class="active" href="contact.php">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</nav>
-
-			</div>
-		</div>
-		<!--//top-bar-->
-		<!--/ banner-text -->
-		<!--// banner-text -->
-	</div>
-	<!--//inner_banner-->
+	<?php include_once 'head/othnav.php'; 
+    include_once 'head/signmodal.php';
+    ?>
 	<!--/short-->
 	<div class="services-breadcrumb-w3ls-agile">
 		<div class="inner_breadcrumb">
@@ -188,42 +142,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--//Header-->
 	<div class="banner_bottom">
 		<div class="container">
-			<div class="tittle_head">
-				<h3 class="headerw3">Mail Us </h3>
-			</div>
-			<div class="inner_sec_w3_agileinfo">
-				<div class="col-md-8 map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.84010033106!2d-74.25819252532891!3d40.70583163828471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1475140387172"
-					    style="border:0"></iframe>
-				</div>
-				<div class="col-md-4 contact_grids_info">
-					<div class="contact_grid">
-						<div class="contact_grid_right">
-							<h4> OFFICE 1</h4>
-							<p>435 City hall,</p>
-							<p>NewYork City SD092.</p>
-						</div>
-					</div>
-					<div class="contact_grid">
-						<div class="contact_grid_right">
-							<h4> OFFICE 2</h4>
-							<p>8088 Jasmine hall,</p>
-							<p>NewYork City SD092.</p>
-						</div>
-					</div>
-					<div class="contact_grid" data-aos="flip-up">
-
-						<div class="contact_grid_right">
-							<h4>OFFICE 3</h4>
-							<p>436 Honey hall,</p>
-							<p>NewYork City SD092.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
 
 			<div class="mail_form">
 				<h3 class="headerw3">Send Us a Message</h3>
@@ -257,78 +175,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		</div>
 	</div>
-	</div>
-
 	<!--footer-->
-	<div class="contact-footer-w3layouts-agile">
-
-		<div class="bottom-social-agileits-w3ls">
-			<div class="container">
-				<div class="col-md-8 botttom-nav-w3ls-agileits">
-					<ul class="f_links col-md-4">
-						<li>
-							<a href="index.php">Home</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-                                                    <a href="services.php">Services</a>
-						</li>
-						<li>
-                                                    <a href="courses.php">Courses</a>
-						</li>
-						<li>
-							<a href="contact.php">Contact</a>
-						</li>
-					</ul>
-					<ul class="f_links col-md-4">
-						<li>
-							<a href="index.php">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Blog</a>
-						</li>
-						<li>
-							<a href="404.html">Careers</a>
-						</li>
-						<li>
-							<a href="services.php">Services</a>
-						</li>
-
-					</ul>
-					<ul class="f_links thrd col-md-4">
-						<li>
-							<a href="index.php">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Events</a>
-						</li>
-						<li>
-							<a href="app.html">Mobile App</a>
-						</li>
-
-
-					</ul>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-md-4 social-icons-wthree">
-					<h6>Connect with us</h6>
-					<a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
-					<a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
-					<a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
-					<a class="linkedin" href="#"><span class="fa fa-linkedin"></span></a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-		</div>
-		<div class="copy-w3-agileits">
-			<h2 class="footer-logo"><a href="index.php">Stretch <span>Online Education</span></a></h2>
-			<p>© 2018 Stretch . All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+	<?php include_once 'head/footer.php'; ?>
 	<!--/footer -->
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>

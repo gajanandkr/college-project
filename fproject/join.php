@@ -50,48 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-	<div class="header inner_banner" id="home">
-		<!--/top-bar-->
-		<div class="top-bar">
-			<div class="header-nav-agileits">
-
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-						<h1><a class="navbar-brand" href="index.php">Stretch <span>Online Education</span></a></h1>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-						<nav>
-							<ul class="top_nav">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle active" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Drop Down <span class="fa fa-angle-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="services.php">Services</a></li>
-                                                                                <li><a href="join.php">Join now</a></li>
-									</ul>
-								</li>
-								<li><a href="courses.php">Courses</a></li>
-								<li><a href="contact">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</nav>
-
-			</div>
-		</div>
-		<!--//top-bar-->
-		<!--/ banner-text -->
-		<!--// banner-text -->
-	</div>
+	<?php include_once 'head/othnav.php'; ?>
 	<!--//inner_banner-->
 	<!--/short-->
 	<div class="services-breadcrumb-w3ls-agile">
@@ -106,81 +65,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--//short-->
 
 	<!-- Modal1 -->
-	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-
-					<div class="signin-form profile">
-
-						<div class="login-m_page_img">
-
-							<img src="images/model.jpg" alt=" " class="img-responsive" />
-
-						</div>
-						<div class="login-m_page">
-							<h3 class="sign">Sign In</h3>
-							<div class="login-form-wthree-agile">
-								<form action="#" method="post">
-									<input type="email" name="email" placeholder="E-mail" required="">
-									<input type="password" name="password" placeholder="Password" required="">
-									<div class="tp">
-										<input type="submit" value="Sign In">
-									</div>
-								</form>
-							</div>
-							<div class="login-social-grids">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-rss"></i></a></li>
-								</ul>
-							</div>
-							<p><a href="#" data-toggle="modal" data-target="#myModal3"> Don't have an account?</a></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //Modal1 -->
-	<!-- Modal2 -->
-	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-
-					<div class="signin-form profile">
-
-						<div class="login-m_page_img">
-
-							<img src="images/model.jpg" alt=" " class="img-responsive" />
-
-						</div>
-						<div class="login-m_page">
-							<h3 class="sign">Sign Up</h3>
-							<div class="login-form-wthree-agile">
-								<form action="#" method="post">
-									<input type="text" name="name" placeholder="Username" required="">
-									<input type="email" name="email" placeholder="Email" required="">
-									<input type="password" name="password" placeholder="Password" required="">
-									<input type="password" name="password" placeholder="Confirm Password" required="">
-									<input type="submit" value="Sign Up">
-								</form>
-							</div>
-							<p><a href="#"> By clicking Sign up, I agree to your terms</a></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	 <?php include_once 'head/othnav.php'; 
+                include_once 'head/signmodal.php';
+        ?>
 	<!-- //Modal2 -->
 
 	<!--//Header-->
@@ -215,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="styled-input agile-styled-input-top">
 								<select class="category2" required="">
-												<option value="">Select Course</option>
+												<option value="">Select Branch</option>
 												<option value="">Web Designing</option>
 												<option value="">Web Technology </option>
 												<option value="">PC Systems </option>
@@ -238,21 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</select>
 								</div>
 							</div>
-							<div class="styled-input">
-								<label class="headerw3">Your Address</label>
-								<div class="">
-									<input type="text" name="name" placeholder="Address" title="Please enter your Address" required="">
-								</div>
-								<div class="">
-									<input type="text" name="name" placeholder="Line" title="Please enter your Line" required="">
-								</div>
-								<div class="">
-									<input type="text" name="name" placeholder="City" title="Please enter your City" required="">
-								</div>
-								<div class="">
-									<input type="text" name="name" placeholder="Zip Code" title="Please enter your Zip code" required="">
-								</div>
-							</div>
+							
 							<div class="clearfix"> </div>
 						</div>
 						<input type="submit" value="Submit">
@@ -334,46 +207,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!--/footer -->
 	<!-- js -->
-	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-	<!-- //js -->
-	<!--search-bar-->
-	<script src="js/main.js"></script>
-	<!--//search-bar-->
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 900);
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-									var defaults = {
-							  			containerID: 'toTop', // fading element id
-										containerHoverID: 'toTopHover', // fading element hover id
-										scrollSpeed: 1200,
-										easingType: 'linear' 
-							 		};
-									*/
-
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-
-
+	
 </body>
 
 </html>

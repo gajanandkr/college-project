@@ -1,9 +1,4 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
 <html>
 
@@ -52,48 +47,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-	<div class="header inner_banner" id="home">
-		<!--/top-bar-->
-		<div class="top-bar">
-			<div class="header-nav-agileits">
-
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-						<h1><a class="navbar-brand" href="index.php">Stretch <span>Online Education</span></a></h1>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-						<nav>
-							<ul class="top_nav">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="about.html" class="active">About</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Drop Down <span class="fa fa-angle-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="services.php">Services</a></li>
-										<li><a href="join.php">Join now</a></li>
-									</ul>
-								</li>
-								<li><a href="courses.php">Courses</a></li>
-								<li><a href="contact.php">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</nav>
-
-			</div>
-		</div>
-		<!--//top-bar-->
-		<!--/ banner-text -->
-		<!--// banner-text -->
-	</div>
+	<?php include_once 'head/othnav.php'; 
+    include_once 'head/signmodal.php';
+    ?>
 	<!--//inner_banner-->
 	<!--/short-->
 	<div class="services-breadcrumb-w3ls-agile">
@@ -109,81 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //inner_content -->
 
 	<!-- Modal1 -->
-	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-
-					<div class="signin-form profile">
-
-						<div class="login-m_page_img">
-
-							<img src="images/model.jpg" alt=" " class="img-responsive" />
-
-						</div>
-						<div class="login-m_page">
-							<h3 class="sign">Sign In</h3>
-							<div class="login-form-wthree-agile">
-								<form action="#" method="post">
-									<input type="email" name="email" placeholder="E-mail" required="">
-									<input type="password" name="password" placeholder="Password" required="">
-									<div class="tp">
-										<input type="submit" value="Sign In">
-									</div>
-								</form>
-							</div>
-							<div class="login-social-grids">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-rss"></i></a></li>
-								</ul>
-							</div>
-							<p><a href="#" data-toggle="modal" data-target="#myModal3"> Don't have an account?</a></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //Modal1 -->
-	<!-- Modal2 -->
-	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-
-					<div class="signin-form profile">
-
-						<div class="login-m_page_img">
-
-							<img src="images/model.jpg" alt=" " class="img-responsive" />
-
-						</div>
-						<div class="login-m_page">
-							<h3 class="sign">Sign Up</h3>
-							<div class="login-form-wthree-agile">
-								<form action="#" method="post">
-									<input type="text" name="name" placeholder="Username" required="">
-									<input type="email" name="email" placeholder="Email" required="">
-									<input type="password" name="password" placeholder="Password" required="">
-									<input type="password" name="password" placeholder="Confirm Password" required="">
-									<input type="submit" value="Sign Up">
-								</form>
-							</div>
-							<p><a href="#"> By clicking Sign up, I agree to your terms</a></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	 
 	<!-- //Modal2 -->
 
 	<!--//Header-->
@@ -378,119 +260,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!--//banner_bottom-->
 
-	<!--/what-wedo-->
-	<div class="what-wedo">
-		<div class="container">
-			<h3 class="headerw3 two">Career Advice</h3>
-			<div class="inner_sec_w3_agileinfo">
-				<div class="wedo-main">
-					<div class="wedo-right">
-
-					</div>
-					<div class="wedo-left">
-						<h4 class="sub-hdng">Grow Your Digital Skills With Accenture</h4>
-						<p class="paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-							eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-						<h4 class="sub-hdng">Our team of professionals have experience in</h4>
-						<p class="paragraph"><span class="fa fa-check" aria-hidden="true"></span>Lorem Ipsum</p>
-						<p class="paragraph"><span class="fa fa-check" aria-hidden="true"></span>perspiciatis</p>
-						<p class="paragraph"><span class="fa fa-check" aria-hidden="true"></span>inventore</p>
-						<p class="paragraph"><span class="fa fa-check" aria-hidden="true"></span>accusantium</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--/what-wedo-->
-
-	<!-- /newsletter-->
-	<div class="newsletter">
-		<div class="col-sm-6 newsleft">
-			<h3>Sign up for Newsletter !</h3>
-		</div>
-		<div class="col-sm-6 newsright">
-			<form action="#" method="post">
-				<input type="email" placeholder="Enter your email..." name="email" required="">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-
-		<div class="clearfix"></div>
-	</div>
-	<!-- //newsletter-->
-
-	<!--/tesimonials-->
-	<div class="tesimonials">
-		<div class="container">
-			<h3 class="headerw3 two">Testimonials</h3>
-			<div class="inner_sec_w3_agileinfo">
-				<div class="test_grid_sec">
-					<div class="col-md-offset-2 col-md-8">
-						<div class="carousel slide two" data-ride="carousel" id="quote-carousel">
-							<!-- Bottom Carousel Indicators -->
-							<ol class="carousel-indicators two">
-								<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-								<li data-target="#quote-carousel" data-slide-to="1"></li>
-								<li data-target="#quote-carousel" data-slide-to="2"></li>
-							</ol>
-
-							<!-- Carousel Slides / Quotes -->
-							<div class="carousel-inner">
-
-								<!-- Quote 1 -->
-								<div class="item active">
-									<blockquote>
-										<div class="test_grid">
-											<div class="col-sm-3 text-center test_img">
-												<i class="fa fa-user" aria-hidden="true"></i>
-
-											</div>
-											<div class="col-sm-9 test_img_info">
-												<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-													auctor nec lacus ut tempor. Mauris.</p>
-												<h6>Sara Lisbon</h6>
-											</div>
-										</div>
-									</blockquote>
-								</div>
-								<!-- Quote 2 -->
-								<div class="item">
-									<blockquote>
-										<div class="test_grid">
-											<div class="col-sm-3 text-center test_img">
-												<i class="fa fa-user" aria-hidden="true"></i>
-											</div>
-											<div class="col-sm-9 test_img_info">
-												<p>Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-													auctor nec lacus ut tempor. Mauris.</p>
-												<h6>Jane Wearne</h6>
-											</div>
-										</div>
-									</blockquote>
-								</div>
-								<!-- Quote 3 -->
-								<div class="item">
-									<blockquote>
-										<div class="test_grid">
-											<div class="col-sm-3 text-center test_img">
-												<i class="fa fa-user" aria-hidden="true"></i>
-											</div>
-											<div class="col-sm-9 test_img_info">
-												<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-													auctor nec lacus ut tempor. Mauris.</p>
-												<h6>Alice Williams</h6>
-											</div>
-										</div>
-									</blockquote>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<!-- bootstrap-modal-pop-up -->
 	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
@@ -511,75 +281,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //bootstrap-modal-pop-up -->
 	<!--footer-->
-	<div class="contact-footer-w3layouts-agile">
-
-		<div class="bottom-social-agileits-w3ls">
-			<div class="container">
-				<div class="col-md-8 botttom-nav-w3ls-agileits">
-					<ul class="f_links col-md-4">
-						<li>
-							<a href="index.php">Home</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="services.php">Services</a>
-						</li>
-						<li>
-                                                    <a href="courses.php">Courses</a>
-						</li>
-						<li>
-							<a href="contact.php">Contact</a>
-						</li>
-					</ul>
-					<ul class="f_links col-md-4">
-						<li>
-                                                    <a href="index.php">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Blog</a>
-						</li>
-						<li>
-							<a href="404.html">Careers</a>
-						</li>
-						<li>
-							<a href="services.php">Services</a>
-						</li>
-
-					</ul>
-					<ul class="f_links thrd col-md-4">
-						<li>
-							<a href="index.php">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Events</a>
-						</li>
-						<li>
-							<a href="app.html">Mobile App</a>
-						</li>
-
-
-					</ul>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-md-4 social-icons-wthree">
-					<h6>Connect with us</h6>
-					<a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
-					<a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
-					<a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
-					<a class="linkedin" href="#"><span class="fa fa-linkedin"></span></a>
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-		</div>
-		<div class="copy-w3-agileits">
-			<h2 class="footer-logo"><a href="index.php">Stretch <span>Online Education</span></a></h2>
-			<p>© 2018 Stretch . All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+	<?php include_once 'head/footer.php'; ?>
 	<!--/footer -->
 
 
