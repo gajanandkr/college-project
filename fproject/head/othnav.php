@@ -1,3 +1,12 @@
+<div class="top-bar_sub_w3layouts_agile">
+		<h6>MAKE CREATIVITY A HABIT</h6>
+		<div class="search">
+			<h5><a class="sign" href="#" data-toggle="modal" data-target="#myModal2">Login</a></h5>
+			
+		</div>
+		<div class="clearfix"> </div>
+</div>
+
 <div class="header inner_banner" id="home">
 		<!--/top-bar-->
 		<div class="top-bar">

@@ -1,3 +1,4 @@
+<?php include_once 'conn/joinc.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -26,25 +27,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!--Header-->
-	<div class="top-bar_sub_w3layouts_agile">
-		<h6>MAKE CREATIVITY A HABIT <a href="contact">Contact Us </a></h6>
-		<div class="search">
-			<h5><a class="sign" href="#" data-toggle="modal" data-target="#myModal2">Student Login</a></h5>
-			<div class="cd-main-header">
-				<ul class="cd-header-buttons">
-					<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
-				</ul>
-				<!-- cd-header-buttons -->
-			</div>
-			<div id="cd-search" class="cd-search">
-				<form action="#" method="post">
-					<input name="Search" type="search" placeholder="Click enter after typing...">
-				</form>
-			</div>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<?php include_once 'head/othnav.php'; ?>
+	<?php include_once 'head/othnav.php'; 
+                include_once 'head/signmodal.php';
+        ?>
 	<!--//inner_banner-->
 	<!--/short-->
 	<div class="services-breadcrumb-w3ls-agile">
@@ -71,61 +56,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3 class="headerw3">Join now</h3>
 			<div class="inner_sec_w3_agileinfo">
 				<div class="register-form">
-					<form action="#" method="post">
+                                    <form action="index.php" method="POST">
 						<div class="fields-grid">
 							<div class="styled-input">
-								<input type="text" placeholder="Your Name" name="Your name" required="">
+								<input type="text" placeholder="Your Name" name="txt_name" required="">
 							</div>
 							<div class="styled-input">
-                                                            <input placeholder="Birth Date"  style="width: 100%;margin-bottom: 15px" name="Text" type="text" value="" onfocus="(this.type='date')" onblur="(this.type='text')" required="">
+                                                            <input placeholder="Birth Date"  style="width: 100%;margin-bottom: 15px" name="dob" type="text" value="" onfocus="(this.type='date')" onblur="(this.type='text')" required="">
 							</div>
 							<div class=" agile-styled-input-top">
-								<select class="category2" required="">
+                                                            <select class="category2" required="" name="gender">
                                                                     <option value="" hidden="">Gender</option>
-												<option value="">Female</option>
-												<option value="">Male</option>
-												<option value="">Other</option>
+												<option value="female">Female</option>
+												<option value="male">Male</option>
+												<option value="other">Other</option>
 											</select>
 							</div>
 							<div class="styled-input">
-								<input type="email" placeholder="Your E-mail" name="Email" required="">
+								<input type="email" placeholder="Your E-mail" name="email" required="">
+							</div>
+                                                        <div class="styled-input">
+                                                            <input type="password" placeholder="Password" name="pass" required="">
 							</div>
 							<div class="styled-input">
-								<input type="text" placeholder="Phone Number" name="Phone" required="">
+								<input type="text" placeholder="Phone Number" name="mobile" required="">
 							</div>
                                                         <div class="styled-input">
 								<input type="text" placeholder="College Roll no" name="roll" required="">
 							</div>
 							<div class="styled-input agile-styled-input-top">
-								<select class="category2" required="">
+                                                            <select class="category2" required="" name="branch">
                                                                     <option value="" hidden="">Select Branch</option>
-												<option value="">IT</option>
-												<option value="">CSE </option>
-												<option value="">ME</option>
-												<option value="">ECE </option>
-												<option value="">AEIE </option>
-												<option value="">EE </option>
-												<option value="">CE</option>
+												<option value="IT">IT</option>
+												<option value="CSE">CSE </option>
+												<option value="ME">ME</option>
+												<option value="ECE">ECE </option>
+												<option value="AEIE">AEIE </option>
+												<option value="EE">EE </option>
+												<option value="CE">CE</option>
 											</select>
 								<span></span>
 							</div>
 							<div class="styled-input">
 								<div class="agileits_w3layouts_grid">
-									<select class="category2" name="category1" required="">
-													<option value="">Select Session</option>
-													<option value="">2015-19</option>
-													<option value="">2016-20</option>
-													<option value="">2017-21</option>
-													<option value="">2018-22</option>
-													<option value="">2019-23</option>
-                                                                                                        <option value="">2020-24</option>
+									<select class="category2" name="session" required="">
+                                                                                                        <option value="" hidden="">Select Session</option>
+													<option value="2015-19">2015-19</option>
+													<option value="2016-20">2016-20</option>
+													<option value="2017-21">2017-21</option>
+													<option value="2018-22">2018-22</option>
+													<option value="2019-23">2019-23</option>
+                                                                                                        <option value="2020-24">2020-24</option>
 												</select>
 								</div>
 							</div>
 							
 							<div class="clearfix"> </div>
 						</div>
-						<input type="submit" value="Submit">
+                                        <input type="submit" name="submit" value="Submit"><?php echo $msg; ?>
 					</form>
 				</div>
 			</div>

@@ -2045,6 +2045,7 @@ button.btn1:hover {
 }
 
 .register-form input[type="text"],
+.register-form input[type="password"],
 .register-form input[type="email"],
 select.category2 {
 	font-size: 16px;

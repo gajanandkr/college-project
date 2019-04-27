@@ -15,11 +15,11 @@
 						<div class="login-m_page">
 							<h3 class="sign">Sign In</h3>
 							<div class="login-form-wthree-agile">
-								<form action="#" method="post">
+								<form action="#" method="POST">
 									<input type="email" name="email" placeholder="E-mail" required="">
 									<input type="password" name="password" placeholder="Password" required="">
 									<div class="tp">
-										<input type="submit" value="Sign In">
+                                                                            <input type="submit" name="Submit" value="Sign In">
 									</div>
 								</form>
 							</div>
