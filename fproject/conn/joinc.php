@@ -31,7 +31,6 @@ $msg="";
     }
 ?>
 <?php
-session_start();
 $msg="";
     if(isset($_POST["Submit"]))
     {
@@ -44,6 +43,7 @@ $msg="";
         if(mysqli_affected_rows($con)){
             $res= mysqli_fetch_assoc($r);
             $_SESSION['uname']=$res[name];
+            $_SESSION['uemail']=$res[mail];
             header("location:index.php");
         }
         else{
