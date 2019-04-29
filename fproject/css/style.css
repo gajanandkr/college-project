@@ -84,13 +84,13 @@ label {
 .top-bar_sub_w3layouts_agile {
 	background: #222;
 	padding: 1em;
-	position: relative;
+	position: stick;
 }
 
 .top-bar_sub_w3layouts_agile h6 {
 	text-align: center;
 	color: #fff;
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight: 400;
 	letter-spacing: 4px;
 	float: left;
@@ -186,7 +186,7 @@ li.dropdown span.fa.fa-angle-down {
 
 h6 {
 	margin: 0 auto;
-	z-index: 999;
+	
 }
 
 h6 a {
@@ -360,6 +360,8 @@ ul.dropdown-menu li a {
 
 .search h5 {
 	margin-top: 11px;
+        display: inline-block;
+        font-weight: bold;
 }
 
 a.sign {

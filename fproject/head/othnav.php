@@ -1,23 +1,17 @@
 <div class="top-bar_sub_w3layouts_agile">
 		<h6>MAKE CREATIVITY A HABIT</h6>
 		<div class="search">
-			<?php 
-                            if(isset($_SESSION['uname']))
-                            {
-                                $c=$_SESSION['uemail'];
-                                echo "<div><a href='conn/update.php?id=$c' class='sign dropdown-toggle' data-toggle='dropdown'><span class='glyphicon glyphicon-user'></span>".$_SESSION['uname']."</a>";
-                                echo "<ul class='dropdown-menu'>
-                                                                            <li><a href='conn/logout.php>Log out<span class='fa fa-angle-down'></span></a></li>
-									</ul></div>";
-                                echo "<div class='clearfix'> </div>";
-                            }
-                            else
-                            {
-                                echo "<div><h5><a href='#' class='sign'><span class='glyphicon glyphicon-user'></span> Guest</a></h5>";
-                                echo "<h5><a class='sign' href='#' data-toggle='modal' data-target='#myModal2'>Login</a></h5></div>";
-                                echo "<div class='clearfix'> </div>";
-                            }
+			<?php if(isset($_SESSION['uname']))
+                        {
+                            $c=$_SESSION['uemail'];
                         ?>
+                    <h5><a href='#' class="sign"><span class='glyphicon glyphicon-user'></span>Hello- <?php echo $_SESSION['uname'];?>&nbsp; &nbsp;</a></h5>
+                    <h5><a href="logout.php" id="logout" class="sign">Logout</a></h5>    
+                        <?php }
+                            else{
+                        ?>
+                    <h5><a class="sign" href="#" data-toggle="modal" data-target="#myModal2"> Login</a></h5>
+                            <?php } ?>
 		</div>
 		<div class="clearfix"> </div>
 </div>

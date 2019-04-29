@@ -1,3 +1,6 @@
+<?php 
+include_once 'conn/joinc.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -5,9 +8,7 @@
 	<title>Stay At Colege</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Stretch a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
+	
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -67,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!--/what-wedo-->
-	<div class="what-wedo">
+	<!--<div class="what-wedo">
 		<div class="container">
 			<h3 class="headerw3 two">Career Advice</h3>
 			<div class="inner_sec_w3_agileinfo">
@@ -89,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-	<!--/what-wedo-->
+	<!--/what-wedo-->-->
 	<!--/services-->
 	<div class="services">
 		<div class="container">

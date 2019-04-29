@@ -23,6 +23,7 @@ $msg="";
             echo "<script type=\"text/javascript\">".
         "alert('successfully Register');".
         "</script>";
+            header("location:index.php");
         }
         else {
             $msg="Error!".mysqli_error($conn);
@@ -30,24 +31,33 @@ $msg="";
         mysqli_close($conn);
     }
 ?>
+<!-- login -->
 <?php
 $msg="";
-    if(isset($_POST["Submit"]))
+    if(isset($_POST["email"]))
     {
-        $email=$_POST['name'];
+        $email=$_POST['email'];
         $pass=$_POST['password'];
         $con= mysqli_connect("localhost","root","","college");
         $q="select * from stu where mail='$email' and password='$pass'";
         $re= mysqli_query($con,$q);
         
         if(mysqli_affected_rows($con)){
-            $res= mysqli_fetch_assoc($r);
+            $res= mysqli_fetch_assoc($re);
             $_SESSION['uname']=$res[name];
             $_SESSION['uemail']=$res[mail];
             header("location:index.php");
+            echo 'yes';     //through  weblesson
         }
         else{
+            echo 'no';//through weblesson
             $msg="invalid details";
         }
+       // mysqli_close($con);//useless or usefull??
+    }
+    //session_destroy();//useless or usefull??
+    if(isset($_POST["action"]))
+    {
+        unset($_SESSION["email"]);
     }
 ?>
