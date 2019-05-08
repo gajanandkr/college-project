@@ -1,5 +1,6 @@
 <?php 
-include_once 'conn/joinc.php'; ?>
+include_once 'conn/joinc.php'; 
+include_once 'conn/login.php';?>
 <!DOCTYPE html>
 <html>
 
@@ -7,9 +8,7 @@ include_once 'conn/joinc.php'; ?>
 	<title>Stay At Colege</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Stretch a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
+	
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -57,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3 class="headerw3">Join now</h3>
 			<div class="inner_sec_w3_agileinfo">
 				<div class="register-form">
-                                    <form action="index.php" method="POST">
+                                    <form  method="POST">
 						<div class="fields-grid">
 							<div class="styled-input">
 								<input type="text" placeholder="Your Name" name="txt_name" required="">
@@ -96,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<option value="EE">EE </option>
 												<option value="CE">CE</option>
 											</select>
-								<span></span>
+								
 							</div>
 							<div class="styled-input">
 								<div class="agileits_w3layouts_grid">
@@ -125,7 +124,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<?php include_once 'head/footer.php'; ?>
 	<!--/footer -->
 	<!-- js -->
-	
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!--search-bar-->
+	<script src="js/main.js"></script>
+	<!--//search-bar-->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+									var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+							 		};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
 
 </html>

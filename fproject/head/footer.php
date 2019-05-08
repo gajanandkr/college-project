@@ -35,7 +35,7 @@
 						</li>
 
 					</ul>
-					<ul class="f_links thrd col-md-4">
+					<!--<ul class="f_links thrd col-md-4">
 						<li>
 							<a href="index.php">Topics</a>
 						</li>
@@ -47,7 +47,7 @@
 						</li>
 
 
-					</ul>
+					</ul>-->
 					<div class="clearfix"></div>
 				</div>
 				<div class="col-md-4 social-icons-wthree">

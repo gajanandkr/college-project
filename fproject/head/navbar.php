@@ -1,12 +1,12 @@
 <div class="top-bar_sub_w3layouts_agile">
 		<h6>MAKE CREATIVITY A HABIT </h6>
-		<div class="search">
+                <div class="search" style="width: auto">
 			<?php if(isset($_SESSION['uname']))
                         {
                             $c=$_SESSION['uemail'];
                         ?>
                     <h5><a href='#' class="sign"><span class='glyphicon glyphicon-user'></span>Hello- <?php echo $_SESSION['uname'];?>&nbsp; &nbsp;</a></h5>
-                    <h5><a href="logout.php" id="logout">Logout</a></h5>    
+                    <h5><a href="logout.php" id="logout" class="sign">Logout</a></h5>    
                         <?php }
                             else{
                         ?>
@@ -39,14 +39,14 @@
 								<li><a href="index.php" class="active">Home</a></li>
 								<li><a href="about.php">About</a></li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Drop Down <span class="fa fa-angle-down"></span></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Register <span class="fa fa-angle-down"></span></a>
 									<ul class="dropdown-menu">
-                                                                            <li><a href="dept.php">Services</a></li>
-                                                                                <li><a href="join.php">Join now</a></li>
+                                                                                <li><a href="join.php">Student </a></li>
+                                                                                <li><a href="teajoin.php"> Teacher</a></li>
 									</ul>
 								</li>
-								<li><a href="courses.php">Courses</a></li>
-								<li><a href="contact.php">Contact</a></li>
+								<li><a href="courses.php">Notice</a></li>
+								<li><a href="dept.php">View Faculty</a></li>
 							</ul>
 						</nav>
 					</div>

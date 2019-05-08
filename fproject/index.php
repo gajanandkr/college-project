@@ -1,5 +1,6 @@
 <?php 
 include_once 'conn/joinc.php';
+include_once 'conn/login.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -188,7 +189,7 @@ include_once 'conn/joinc.php';
 										<h5>Arts &amp; Media </h5>
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-										<div class="thumbnail"><img src="images/g6.jpg" alt="Image" style="max-width:100%;"></div>
+										<div class="thumbnail"><img src="images/g6.jpg" alt="Image" style="max-width:100%;height: 100%;"></div>
 										<h5>Mathematics</h5>
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
@@ -219,22 +220,7 @@ include_once 'conn/joinc.php';
 		</div>
 	</div>
 	<!-- bootstrap-modal-pop-up -->
-	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					Luscious
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				</div>
-				<div class="modal-body">
-					<img src="images/model.jpg" alt=" " class="img-responsive" />
-					<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-						consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-						vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<!-- //bootstrap-modal-pop-up -->
 	<!--footer-->
 	<?php include_once 'head/footer.php'; ?>
@@ -268,7 +254,26 @@ include_once 'conn/joinc.php';
 	<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
 	<script src="js/easyResponsiveTabs.js"></script>
 	<!--Plug-in Initialisation-->
-	
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			//Vertical Tab
+			$('#parentVerticalTab').easyResponsiveTabs({
+				type: 'vertical', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				tabidentify: 'hor_1', // The tab groups identifier
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#nested-tabInfo2');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+		});
+	</script>
 	<!--/script-->
 	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>

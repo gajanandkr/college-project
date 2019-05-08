@@ -5,7 +5,7 @@
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 
-					<div class="signin-form profile modal-body">
+					<div class="signin-form profile ">
 
 						<div class="login-m_page_img">
 
@@ -15,7 +15,7 @@
 						<div class="login-m_page">
 							<h3 class="sign">Sign In</h3>
 							<div class="login-form-wthree-agile">
-								<form action="#" method="POST">
+								<form  method="POST">
                                                                     <input type="email" name="email" id="email" placeholder="E-mail" required="">
 									<input type="password" name="password" id="password" placeholder="Password" required="">
 									<div class="tp">
@@ -105,7 +105,7 @@
         $('#logout').click(function(){
            var action = "logot";
            $.ajax({
-               url:"conn/joinc.php",
+               url:"logout.php",
                method:"POST",
                data:{action,action),
                    success:function()

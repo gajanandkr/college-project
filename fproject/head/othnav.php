@@ -1,6 +1,6 @@
 <div class="top-bar_sub_w3layouts_agile">
 		<h6>MAKE CREATIVITY A HABIT</h6>
-		<div class="search">
+		<div class="search" style="width: auto">
 			<?php if(isset($_SESSION['uname']))
                         {
                             $c=$_SESSION['uemail'];
@@ -36,17 +36,17 @@
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav>
 							<ul class="top_nav">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="about.php" class="active">About</a></li>
+								<li><a href="index.php" class="active">Home</a></li>
+								<li><a href="about.php">About</a></li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Drop Down <span class="fa fa-angle-down"></span></a>
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Register <span class="fa fa-angle-down"></span></a>
 									<ul class="dropdown-menu">
-										<li><a href="dept.php">Services</a></li>
-										<li><a href="join.php">Join now</a></li>
+                                                                                <li><a href="join.php">Student</a></li>
+                                                                                <li><a href="teajoinjoin.php">Teacher</a></li>
 									</ul>
 								</li>
-								<li><a href="courses.php">Courses</a></li>
-								<li><a href="contact.php">Contact</a></li>
+								<li><a href="courses.php">Notice</a></li>
+								<li><a href="dept.php">View Faculty</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -58,42 +58,3 @@
 		<!--/ banner-text -->
 		<!--// banner-text -->
 	</div>
-
-<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-	<!-- //js -->
-	<!--search-bar-->
-	<script src="js/main.js"></script>
-	<!--//search-bar-->
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 900);
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-									var defaults = {
-							  			containerID: 'toTop', // fading element id
-										containerHoverID: 'toTopHover', // fading element hover id
-										scrollSpeed: 1200,
-										easingType: 'linear' 
-							 		};
-									*/
-
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>

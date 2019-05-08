@@ -1,4 +1,5 @@
-
+<?php include_once 'conn/joinc.php';
+include_once 'conn/login.php';?>
 <!DOCTYPE html>
 <html>
 
@@ -6,9 +7,7 @@
 	<title>Stretch an Education Category Bootstrap responsive WebTemplate | About :: w3layouts</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Stretch a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
+	
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -59,12 +58,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="inner_sec_w3_agileinfo">
 				<div class="ab_info">
 					<img src="images/banner1.jpg" alt=" " class="img-responsive">
-					<h4>Volutpat purus viverra sit amet</h4>
+					<!--<h4>Volutpat purus viverra sit amet</h4>
 					<p class="sub_p">Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu purus, sit amet
 						volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada congue nunc ornare. Cum sociis
 						In semper lorem eget tortor pulvinar ultricies.Quisque lacinia quam sed tortor interdum, malesuada congue nunc ornare.
 						Cum sociis In semper lorem eget tortor pulvinar ultricies.
-					</p>
+					</p>-->
 				</div>
 
 				<div class="news-main">
@@ -95,7 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //about -->
 
-	<div class="sec_video">
+	<!--<div class="sec_video">
 		<div class="container">
 			<div class="about-main about1">
 				<div class="col-md-4 about-gd">
@@ -124,10 +123,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!--/video-->
 	<!-- /projects -->
-	<div class="banner_bottom">
+	<!--<div class="banner_bottom">
 		<div class="container">
 			<h3 class="headerw3">Our Staff</h3>
 			<div class="inner_sec_w3_agileinfo">
@@ -193,10 +192,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- //projects -->
 	<!-- /stats -->
-	<div class="stats_test">
+	<!--<div class="stats_test">
 		<h3 class="headerw3 two">Our Stats</h3>
 		<div class="inner_sec_w3_agileinfo">
 			<div class="stats">
@@ -223,24 +222,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- //stats -->
 
 	<!--/banner_bottom-->
-	<div class="banner_bottom">
-		<div class="banner_bottom_in">
-			<h3 class="headerw3">Take the world's best courses, online.</h3>
-
-			<p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-				nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-			<div class="edu_button">
-				<a class="btn btn-primary btn-lg hvr-underline-from-left" href="single.html" role="button">Read More </a>
-			</div>
-			<iframe src="https://www.youtube.com/embed/HndV87XpkWg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
-	</div>
+	
 	<!--//banner_bottom-->
 
 	

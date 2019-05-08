@@ -1,3 +1,5 @@
+<?php include_once 'conn/joinc.php'; 
+include_once 'conn/login.php';?>
 <!DOCTYPE html>
 <html>
 
@@ -5,9 +7,7 @@
 	<title>Stretch an Education Category Bootstrap responsive WebTemplate | Contact :: w3layouts</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Stretch a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-
+	
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
