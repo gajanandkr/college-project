@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once 'conn/dbcon.php';
 $msg="";
     if(isset($_POST["submit"])){
             
@@ -13,11 +14,11 @@ $msg="";
         $branc=$_POST['branch'];
         $sessio=$_POST['session'];
         
+        $user_id= "STU-".mt_rand(100,999);
         
-        $conn= mysqli_connect("localhost","root","","college");
-        $qry="insert into stu values('$name','$date','$gende','$mail','$pass','$mobil','$rol','$branc','$sessio')";
-        mysqli_query($conn,$qry);
-        if (mysqli_affected_rows($conn)>0) {
+        $qry="insert into stu values('','$user_id',$name','$date','$gende','$mail','$pass','$mobil','$rol','$branc','$sessio')";
+        mysqli_query($cont,$qry);
+        if (mysqli_affected_rows($cont)>0) {
             //header("location:index.php");
             //$msg= "Registered";
             echo "<script type=\"text/javascript\">".
@@ -26,9 +27,9 @@ $msg="";
             //header("location:index.php");
         }
         else {
-            $msg="Error!".mysqli_error($conn);
+            $msg="Error!".mysqli_error($cont);
         }
-        mysqli_close($conn);
+        mysqli_close($cont);
     }
 ?>
 

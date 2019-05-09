@@ -79,7 +79,7 @@ include_once 'conn/login.php';?>
                                                             <input type="password" placeholder="Password" name="pass" required="">
 							</div>
 							<div class="styled-input">
-								<input type="text" placeholder="Phone Number" name="mobile" required="">
+                                                            <input type="text" maxlength="10" minlength="10" placeholder="Phone Number" name="mobile" required="">
 							</div>
                                                         <div class="styled-input">
 								<input type="text" placeholder="College Roll no" name="roll" required="">

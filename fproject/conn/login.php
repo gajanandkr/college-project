@@ -1,35 +1,26 @@
 <?php
 $msg="";
+include_once 'conn/dbcon.php';
     if(isset($_POST["Submit"]))
     {
         $email=$_POST['email'];
         $pass=$_POST['password'];
-        $con= mysqli_connect("localhost","root","","college");
+        
         $q="select * from stu where mail='$email' and password='$pass'";
-        $re= mysqli_query($con,$q);
+        $re= mysqli_query($cont,$q);
         
-        //admin login
-        $qy="select * from admin where name='$email' and password='$pass'";
-        $result= mysqli_query($con, $qy);
         
-        /*if($email=='admin@gmail.com' && $passs=='admin')
-        {
-            header("location:teajoinc.php");
-        }*/
         
-        if(mysqli_affected_rows($con)){
-            if($res= mysqli_fetch_assoc($re)){
+        if(mysqli_affected_rows($cont)){
+            $res= mysqli_fetch_assoc($re);
                 $_SESSION['uname']=$res[name];
                 $_SESSION['uemail']=$res[mail];
-                header("location:index.php");
-            }
-            elseif($res= mysqli_fetch_assoc($result)) 
-            {
-            $_SESSION['uname']=$res[name];
-                $_SESSION['uemail']=$res[mail];
-                header("location:teajoin.php");
-                
-            }
+                $_SESSION['udept']=$res['dept'];
+                $_SESSION['usession']=$res['session'];
+                $_SESSION['user_id']=$res['user_id'];
+                header("location:student.php");
+            
+            
             //$res= mysqli_fetch_assoc($re);
             //$_SESSION['uname']=$res[name];
             //$_SESSION['uemail']=$res[mail];
@@ -43,7 +34,7 @@ $msg="";
         "</script>";
             //$msg="invalid details";
         }
-        mysqli_close($con);//useless or usefull??
+        mysqli_close($cont);//useless or usefull??
     }
     //session_destroy();//useless or usefull??
    // if(isset($_POST["action"]))

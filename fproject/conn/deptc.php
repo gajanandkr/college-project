@@ -1,5 +1,6 @@
 <?php
 $msg="";
+
 if(isset($_POST["depart"]))
 {
     
@@ -23,7 +24,7 @@ if(isset($_POST["depart"]))
                         </div>
                         
 			<h5>'.$row["name"].'</h5>
-                            <a href="chat/index.php" class="btn btn-primary btn-md btn-block">Chat</a>
+                            <a href="student.php" class="btn btn-primary btn-md btn-block">Chat</a>
                     </div>
                 ';
         }
