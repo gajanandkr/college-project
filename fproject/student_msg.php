@@ -1,9 +1,32 @@
 <?php
+$msg = "";
 session_start();
-include_once 'conn/dbcon.php';
-
+$cont = mysqli_connect("localhost", "root", "", "college");
 $dept = $_SESSION['udept'];
 $session = $_SESSION['usession'];
+//$user_id=$_SESSION['user_id'];
+//var_dump($user_id);
+//$teacher_name=$_SESSION['tea_id'];
+if (isset($_POST['sendData'])) {
+    $message = $_POST['message'];
+    $user_id = $_SESSION['user_id'];
+    $teacher_name = $_SESSION['tea_id'];
+    $timestamp = date("Y-m-d H:i:s");
+    $sql = "INSERT INTO message VALUES (Null,'$teacher_name','$user_id','$message','$timestamp','0')";
+
+    if ($cont->query($sql) === TRUE) {
+        $msg = "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $cont->error;
+    }
+
+    //if(mysqli_affected_rows($cont))
+    //{
+    //    $ro= mysqli_fetch_assoc($re);
+    //}
+    //else{
+    // }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +62,7 @@ $session = $_SESSION['usession'];
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body onload="">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -62,7 +85,7 @@ $session = $_SESSION['usession'];
 
                         <li class="dropdown ">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                <?php echo $_SESSION['uname']; ?>
+<?php echo $_SESSION['uname']; ?>
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li class="dropdown-header"></li>
@@ -90,40 +113,43 @@ $session = $_SESSION['usession'];
                             <div class="inbox_people">
                                 <div class="headind_srch row">
                                     <div class="recent_heading">
-                                            <div class="col-md-6">
-                                                <h4 style="padding-top:8px">Teacher</h4>
-                                            </div>
-                                            <div class="col-md-6"><select class="btn " required="" name="branch" >
-                                                    <option value="" hidden="">Select Branch</option>
-                                                    <option value="IT">IT</option>
-                                                    <option value="CSE">CSE </option>
-                                                    <option value="ME">ME</option>
-                                                    <option value="ECE">ECE </option>
-                                                    <option value="AEIE">AEIE </option>
-                                                    <option value="EE">EE </option>
-                                                    <option value="CE">CE</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <h4 style="padding-top:8px">Teacher</h4>
+                                        </div>
+                                        <!--<form method="POST">
+                                        <div class="col-md-6"><select class="btn " required="" name="branch" >
+                                                <option value="" hidden="">Select Branch</option>
+                                                <option value="IT">IT</option>
+                                                <option value="CSE">CSE </option>
+                                                <option value="ME">ME</option>
+                                                <option value="ECE">ECE </option>
+                                                <option value="AEIE">AEIE </option>
+                                                <option value="EE">EE </option>
+                                                <option value="CE">CE</option>
+                                            </select>
+                                        </div>
+                                        </form>-->     
                                     </div>
                                 </div>
                                 <div class="inbox_chat">
 
-                                    <?php
-                                    $qry = "select * from tea ";
-                                    $res = mysqli_query($cont, $qry);
-                                    if (mysqli_affected_rows($cont)) {
-                                        while ($row = mysqli_fetch_assoc($res)) {
-                                            echo '<div class="chat_list active_chat">
+<?php
+//$branch=$_POST['branch'];
+$qry = "select * from tea "; //where depart='$branch' ";
+$res = mysqli_query($cont, $qry);
+if (mysqli_affected_rows($cont)) {
+    while ($row = mysqli_fetch_assoc($res)) {
+        echo '<div class="chat_list active_chat">
                                         <div class="chat_people">
-                                            <a href="#"><div class="chat_img"><img src="' . $row['teapic'] . '" alt="image"> </div>
+                                            <div class="tId" id="' . $row['teacher_id'] . '" style="cursor:pointer" onclick="getChat()"><div class="chat_img"><img src="' . $row['teapic'] . '" alt="image"> </div>
                                             <div class="chat_ib">
                                                 <h5>' . $row['name'] . '</h5>
-                                            </div></a>
+                                            </div></div>
                                         </div>
                                     </div>';
-                                        }
-                                    }
-                                    ?>
+    }
+}
+?>
                                     <!--<div class="chat_list active_chat">
                                         <div class="chat_people">
                                             <div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
@@ -137,51 +163,16 @@ $session = $_SESSION['usession'];
                                 </div>
                             </div>
                             <div class="mesgs">
-                                <div class="msg_history">
-                                    <div class="incoming_msg">
-                                        <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                                        <div class="received_msg">
-                                            <div class="received_withd_msg">
-                                                <p>Test which is a new approach to have all
-                                                    solutions</p>
-                                                <span class="time_date"> 11:01 AM    |    June 9</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="outgoing_msg">
-                                        <div class="sent_msg">
-                                            <p>Test which is a new approach to have all
-                                                solutions</p>
-                                            <span class="time_date"> 11:01 AM    |    June 9</span> </div>
-                                    </div>
-                                    <div class="incoming_msg">
-                                        <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                                        <div class="received_msg">
-                                            <div class="received_withd_msg">
-                                                <p>Test, which is a new approach to have</p>
-                                                <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="outgoing_msg">
-                                        <div class="sent_msg">
-                                            <p>Apollo University, Delhi, India Test</p>
-                                            <span class="time_date"> 11:01 AM    |    Today</span> </div>
-                                    </div>
-                                    <div class="incoming_msg">
-                                        <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                                        <div class="received_msg">
-                                            <div class="received_withd_msg">
-                                                <p>We work directly with our designers and suppliers,
-                                                    and sell direct to you, which means quality, exclusive
-                                                    products, at a price anyone can afford.</p>
-                                                <span class="time_date"> 11:01 AM    |    Today</span></div>
-                                        </div>
-                                    </div>
+                                <div class="msg_history" id="show">
+
                                 </div>
                                 <div class="type_msg">
-                                    <div class="input_msg_write">
-                                        <input type="text" class="write_msg" placeholder="Type a message" />
-                                        <button class="msg_send_btn" type="button">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                                    </div>
+                                    <form method="POST">
+                                        <div class="input_msg_write">
+                                            <input type="text" name="message" class="write_msg" placeholder="Type a message" />
+                                            <button class="msg_send_btn" type="submit" name="sendData">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -191,10 +182,25 @@ $session = $_SESSION['usession'];
             <footer class="pull-left footer">
                 <p class="col-md-12">
                 <hr class="divider">
-                Copyright &COPY; 2015 <a href="#">Gravitano</a>
+                Copyright &COPY; 2015 <a href="#"></a>
                 </p>
             </footer>
-        </div>	<script type="text/javascript">
+        </div>	
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.tId').click(function () {
+                    var tea_id = $(this).attr("id");
+                    $.ajax({
+                        url: "conn/msg_stu.php",
+                        method: "POST",
+                        data: {tea_id: tea_id},
+                        success: function (data) {
+                            $('#show').html(data);
+                        }
+                    });
+                });
+            });
         </script>
+
     </body>
 </html>
