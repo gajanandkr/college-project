@@ -1,17 +1,11 @@
 <?php
 session_start();
-include_once 'conn/dbcon.php';
+
+include_once 'conn/stu_assign.php';
 
 $dept = $_SESSION['udept'];
 $session = $_SESSION['usession'];
-if ($dept == '' && $session == '') {
-    
-    echo "<script type=\"text/javascript\">".
-        "alert('Please Login');".
-        "</script>";
-    header("location:index.php");
-}
-else{
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,50 +79,73 @@ else{
             <div class="col-md-2 sidebar">
                 <ul class="nav nav-pills nav-stacked">
 
-                    <li class="active"><a href="#">View Assignment</a></li<>
+                    <li><a href="#">View Assignment</a></li<>
                     <li><a href="student_msg.php">Messages</a></li>
-                    <li><a href="submit_assignment.php">Submit Assignment</a></li>
+                    <li class="active"><a href="#">Submit Assignment</a></li>
                 </ul>
             </div>
-            <div class="col-md-10 content ">
-                <div class="table-responsive" id="sailorTableArea">
-                    <table id="sailorTable" class="table table-striped table-bordered" width="auto;">
-                        <thead>
-                            <tr>
-                                <th>Branch</th>
-                                <th>Session</th>
-                                <th>Last Date</th>
-                                <th>Subject Name</th>
-                                <th>Code</th>
-                                <th>Title</th>
-                                <th>Download</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <?php
-                        
-                            $qry = "select * from assignment where branch='$dept' && session='$session'";
-                            $res = mysqli_query($cont, $qry);
-                            if (mysqli_affected_rows($cont)) {
-                                while ($re = mysqli_fetch_assoc($res)) {
-                                    echo "
-                                            <tr>
-                                                <td>" . $re['branch'] . "</td>
-                                                <td>" . $re['session'] . "</td>
-                                                <td>" . $re['last_date'] . "</td>
-                                                <td>" . $re['subject'] . "</td>
-                                                <td>" . $re['code'] . "</td>
-                                                <td>" . $re['title'] . "</td>
-                                                <td><a class='btn btn-success btn-sm' href='download.php?fileName=" . $re['assignment'] ."'>Download Assignment</a></td>
-                                            </tr>";
-                                }
-                            }
-                        } 
-                        ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <div class="col-md-10 content container">
+                    <h3 class="headerw3">Submit Assignment</h3>
+			<div class="inner_sec_w3_agileinfo">
+				<div class="register-form">
+                                    <form  method="POST" enctype="multipart/form-data">
+						<div class="fields-grid">
+							
+							
+							<div class="styled-input agile-styled-input-top">
+                                                            <select class="category2" required="" name="branch">
+                                                                    <option value="" hidden="">Select Branch</option>
+												<option value="IT">IT</option>
+												<option value="CSE">CSE </option>
+												<option value="ME">ME</option>
+												<option value="ECE">ECE </option>
+												<option value="AEIE">AEIE </option>
+												<option value="EE">EE </option>
+												<option value="CE">CE</option>
+											</select>
+								
+							</div>
+							<div class="styled-input">
+								<div class="agileits_w3layouts_grid">
+									<select class="category2" name="session" required="">
+                                                                                                        <option value="" hidden="">Select Session</option>
+													<option value="2015-19">2015-19</option>
+													<option value="2016-20">2016-20</option>
+													<option value="2017-21">2017-21</option>
+													<option value="2018-22">2018-22</option>
+													<option value="2019-23">2019-23</option>
+                                                                                                        <option value="2020-24">2020-24</option>
+												</select>
+								</div>
+							</div>
+                                                        <div class="styled-input">
+                                                            <input placeholder="Semester e.g. 1,2,3..." name="semester" type="text" value=""  required="">
+							</div>
+                                                        <div class="styled-input">
+								<input type="text" placeholder="Subject Name" name="subject_name" required="">
+							</div>
+                                                        <div class="styled-input">
+								<input type="text" placeholder="Subject Code" name="sub_code" required="">
+							</div>
+                                                        <div class="styled-input">
+								<input type="text" placeholder="Assignment number" name="number" required="">
+							</div>
+                                                        
+                                                        <br/>
+                                                        <div class="row" style="display:inline-block">
+                                                            <h4>upload Assignment</h4>
+                                                            
+                                                            <input class="btn" type="file" name="myfile"/>
+                                                        </div><?php echo $msg1; ?>
+                                                            <br>
+							
+							<div class="clearfix"> </div>
+						</div>
+                                        <input type="submit" name="btn_send" value="Send"><?php echo $msg; ?>
+					</form>
+				</div>
+			</div>
+		</div>
             <footer class="pull-left footer">
                 <p class="col-md-12">
                 <hr class="divider">

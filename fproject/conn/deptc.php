@@ -17,14 +17,14 @@ if(isset($_POST["depart"]))
         {
             echo '
                 <div class="col-md-3 col-sm-3 col-xs-3 slidering" style="padding-bottom: 15px">
-                        <div class="thumbnail">
-                        <a href="">
-                            <img src="'.$row["teapic"].'" alt="Image" style="max-width:100%;" width="200" height="200">
-                        </a>
+                        <div class="thumbnail" style="width=200; height=200;">
+                        
+                            <img src="'.$row["teapic"].'" alt="Image" style="max-width:100%;" >
+                        
                         </div>
                         
 			<h5>'.$row["name"].'</h5>
-                            <a href="student.php" class="btn btn-primary btn-md btn-block">Chat</a>
+                            <button id="chat" name="chat" class="btn btn-primary btn-md btn-block">Chat</button>
                     </div>
                 ';
         }
@@ -33,4 +33,5 @@ if(isset($_POST["depart"]))
         echo "NO Data";
     } 
 }
+
 ?>

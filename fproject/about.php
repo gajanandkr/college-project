@@ -79,14 +79,12 @@ include_once 'conn/login.php';?>
 					</div>
 					<div class="col-md-6 news-right">
 						<h4>Our Mission</h4>
-						<p class="sub_p">Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu purus, sit amet
-							volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada congue nunc ornare. Cum sociis
-							In semper lorem eget tortor pulvinar ultricies.
+						<p class="sub_p">This website STAY AT COLLEGE is a platform for a better communication between the faculties/teachers and students of their respective colleges.
+This portal would enable the teachers to be connected to their students 24 hours a day.This feature would keep the teachers involved and would help 
+them to actively participate in their students education and the students would also get a better way to clear their doubts as soon as possible.
+Members or participants to their website would be able to save their time and would get their result more efficiently.
 						</p>
-						<p>Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu purus, sit amet
-							volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada congue nunc ornare. Cum sociis
-							. In semper lorem eget tortor pulvinar ultricies.
-						</p>
+						
 					</div>
 				</div>
 			</div>

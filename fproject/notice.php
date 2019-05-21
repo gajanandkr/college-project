@@ -75,9 +75,9 @@ include_once 'conn/send_notice.php';
 		<div class="col-md-2 sidebar">
 			<ul class="nav nav-pills nav-stacked">
 				
-                            <li class="active"><a href="#">Assignment Upload</a></li<>
+                            <li><a href="#">Assignment Upload</a></li<>
                             <li><a href="teacher_msg.php">Messages</a></li>
-                            <li><a href="notice.php">Send Notice</a></li>
+                            <li class="active"><a href="notice.php">Send Notice</a></li>
 			</ul>
 		</div>
 		<div class="col-md-10 content container">

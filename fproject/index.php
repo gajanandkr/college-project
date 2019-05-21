@@ -43,12 +43,14 @@ include_once 'conn/login.php';
 			<div class="about-main about1">
 				<div class="col-md-4 about-gd">
 					<div class="about-sub-gd">
-						<h4>Curated Classes</h4>
-						<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis </p>
+						<h4>Curated Classes//Assignments</h4>
+						<p>It is one of the best revision tool for academic brilliance.
+Teachers will send their assignments to their respective department and students will submit that before submission date.</p>
 					</div>
 					<div class="about-sub-gd">
 						<h4>Expert Instructors</h4>
-						<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis </p>
+						<p>Expert instructor is customized to improve students' result.They will be available almost all the time for their students'  to help them, 
+it will help students to get a better result in efficient manner. </p>
 					</div>
 				</div>
 				<div class="col-md-4 about-gd1">
@@ -56,12 +58,12 @@ include_once 'conn/login.php';
 				</div>
 				<div class="col-md-4 about-gd ab-right">
 					<div class="about-sub-gd">
-						<h4>Students Strong</h4>
-						<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis </p>
+						<h4>Students </h4>
+						<p>It is a better platform for students to communicate with their teacher regarding their any kind of doubt related to their education. </p>
 					</div>
 					<div class="about-sub-gd">
-						<h4>Physical Activity</h4>
-						<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis </p>
+						<h4>Email</h4>
+						<p>Each and every students will get documents through email which will be easy and helpful for them.</p>
 					</div>
 				</div>
 				<div class="clearfix"></div>
@@ -93,7 +95,7 @@ include_once 'conn/login.php';
 	</div>
 	<!--/what-wedo-->
 	<!--/services-->
-	<div class="services">
+	<!--<div class="services">
 		<div class="container">
 			<h3 class="headerw3">Featured Courses</h3>
 			<div class="inner_sec_w3_agileinfo">
@@ -154,7 +156,7 @@ include_once 'conn/login.php';
 	<!--/top_spl_courses-->
 	<div class="top_spl_courses">
 		<div class="container">
-			<h3 class="headerw3">Branches</h3>
+			<h3 class="headerw3">Our Groups</h3>
 			<div class="inner_sec_w3_agileinfo">
 				<div class="mid_slider">
 					<!-- banner -->
@@ -164,21 +166,21 @@ include_once 'conn/login.php';
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								<div class="row">
+                                                                        <div class="col-md-3 col-sm-3 col-xs-3 slidering">
+										<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+										<h5>I-Coders</h5>
+									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-                                                                            <div class="thumbnail"><a href=""><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></a></div>
-										<h5>Business &amp; Management</h5>
+                                                                            <div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+										<h5> Music Group </h5>
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 										<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
-										<h5>Data Structures</h5>
-									</div>
-									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-										<div class="thumbnail"><img src="images/g3.jpg" alt="Image" style="max-width:100%;"></div>
-										<h5>Digital Marketing</h5>
+										<h5>Cultural Group</h5>
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 										<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
-										<h5>Financial Analyst Course</h5>
+										<h5>IOT</h5>
 									</div>
 								</div>
 							</div>
@@ -186,19 +188,19 @@ include_once 'conn/login.php';
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 										<div class="thumbnail"><img src="images/g5.jpg" alt="Image" style="max-width:100%;"></div>
-										<h5>Arts &amp; Media </h5>
+										<h5>NCC </h5>
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 										<div class="thumbnail"><img src="images/g6.jpg" alt="Image" style="max-width:100%;height: 100%;"></div>
-										<h5>Mathematics</h5>
+										<h5>NSS</h5>
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 										<div class="thumbnail"><img src="images/g7.jpg" alt="Image" style="max-width:100%;"></div>
-										<h5>Study Skills</h5>
+										<h5> Ankurit</h5>
 									</div>
 									<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 										<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
-										<h5>Computer Science</h5>
+										<h5> Karate</h5>
 									</div>
 								</div>
 							</div>

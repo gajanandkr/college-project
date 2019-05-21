@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include_once 'conn/dbcon.php';
 include_once 'conn/login.php';
 $msg="";

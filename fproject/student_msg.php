@@ -19,13 +19,6 @@ if (isset($_POST['sendData'])) {
     } else {
         echo "Error: " . $sql . "<br>" . $cont->error;
     }
-
-    //if(mysqli_affected_rows($cont))
-    //{
-    //    $ro= mysqli_fetch_assoc($re);
-    //}
-    //else{
-    // }
 }
 ?>
 <!DOCTYPE html>
@@ -101,8 +94,9 @@ if (isset($_POST['sendData'])) {
             <div class="col-md-2 sidebar">
                 <ul class="nav nav-pills nav-stacked">
 
-                    <li class="active"><a href="student.php">View Assignment</a></li<>
-                    <li><a href="#">Messages</a></li>
+                    <li><a href="student.php">View Assignment</a></li<>
+                    <li class="active"><a href="#">Messages</a></li>
+                    <li><a href="submit_assignment.php">Submit Assignment</a></li>
                 </ul>
             </div>
             <div class="col-md-10 content ">
@@ -169,8 +163,8 @@ if (isset($_POST['sendData'])) {
                                 <div class="type_msg">
                                     <form method="POST">
                                         <div class="input_msg_write">
-                                            <input type="text" name="message" class="write_msg" placeholder="Type a message" />
-                                            <button class="msg_send_btn" type="submit" name="sendData">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                            <input type="text" id="message" name="message" class="write_msg" placeholder="Type a message" />
+                                            <button class="msg_send_btn" id="send" type="submit" name="sendData">Send <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                                         </div>
                                     </form>
                                 </div>
@@ -204,6 +198,22 @@ if (isset($_POST['sendData'])) {
                     });
                 });
             });
+            
+            /*$(document).ready(function () {
+                $('#send').click(function () {
+                    var message = $('#message').val();
+                    $.ajax({
+                        url: "conn/msg_stu_send.php",
+                        method: "POST",
+                        data: {message: message},
+                        success: function (data) {
+                           $('#show').html(data); 
+                        }
+                    });
+                });
+            });*/
+    
+            
         </script>
 
     </body>

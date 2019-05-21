@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $msg = "";
 include_once 'conn/dbcon.php';
 if (isset($_POST["Submit"])) {

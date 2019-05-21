@@ -98,8 +98,8 @@ if (isset($_POST['sendData'])) {
             <div class="col-md-2 sidebar">
                 <ul class="nav nav-pills nav-stacked">
 
-                    <li class="active"><a href="teacher.php">Assignment Upload</a></li<>
-                    <li><a href="teacher_msg.php">Messages</a></li>
+                    <li><a href="teacher.php">Assignment Upload</a></li<>
+                    <li class="active"><a href="teacher_msg.php">Messages</a></li>
                     <li><a href="notice.php">Send Notice</a></li>
                 </ul>
             </div>
@@ -129,7 +129,7 @@ if (isset($_POST['sendData'])) {
 
                                                 echo '<div class="chat_list active_chat">
                                                         <div class="chat_people">
-                                                            <div class="tId" id="' . $user_id . '" style="cursor:pointer"><div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="image"> </div>
+                                                            <div class="tId" id="' . $user_id . '" style="cursor:pointer" onclick="getChat()"><div class="chat_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="image"> </div>
                                                             <div class="chat_ib">
                                                                 <h5>' . $rows['name'] . '</h5>
                                                             </div></div>
@@ -172,17 +172,30 @@ if (isset($_POST['sendData'])) {
             </footer>
         </div>	
         <script type="text/javascript">
-            function getChat(){
-                        var user_id= '<?php echo $user_id ?>';
+            /*function getChat(){
+                        var user_id= '<?php //echo $user_id ?>';
                         $.ajax({
                             url:"conn/msg_tea.php",
                             method:"POST",
                             data:{user_id:user_id},
-                            success:function(data){
-                               $('#show').html(data); 
+                            success:function(){
+                                
                             }
                         });
-               }
+               }*/
+               $(document).ready(function () {
+                $('.tId').click(function () {
+                    var user_id = $(this).attr("id");
+                    $.ajax({
+                        url: "conn/msg_tea.php",
+                        method: "POST",
+                        data: {user_id: user_id},
+                        success: function (data) {
+                            $('#show').html(data);
+                        }
+                    });
+                });
+            });
         </script>
     </body>
 </html>

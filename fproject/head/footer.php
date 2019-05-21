@@ -11,43 +11,29 @@
 							<a href="about.php">About</a>
 						</li>
 						<li>
-							<a href="services.php">Services</a>
+							<a href="#">Services</a>
 						</li>
 						<li>
-                                                    <a href="courses.php">Courses</a>
+                                                    <a href="courses.php">Notice</a>
 						</li>
 						<li>
-							<a href="contact.php">Contact</a>
+							<a href="#">Contact</a>
 						</li>
 					</ul>
 					<ul class="f_links col-md-4">
 						<li>
-							<a href="index.php">Topics</a>
+							<a href="#">Topics</a>
 						</li>
 						<li>
-							<a href="404.html">Blog</a>
+							<a href="#">Blog</a>
 						</li>
 						<li>
-							<a href="404.html">Careers</a>
+							<a href="#">Careers</a>
 						</li>
-						<li>
-							<a href="services.php">Services</a>
-						</li>
+						
 
 					</ul>
-					<!--<ul class="f_links thrd col-md-4">
-						<li>
-							<a href="index.php">Topics</a>
-						</li>
-						<li>
-							<a href="404.html">Events</a>
-						</li>
-						<li>
-							<a href="app.html">Mobile App</a>
-						</li>
-
-
-					</ul>-->
+					
 					<div class="clearfix"></div>
 				</div>
 				<div class="col-md-4 social-icons-wthree">

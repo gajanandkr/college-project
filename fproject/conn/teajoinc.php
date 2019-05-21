@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 $msg = "";
 $msg1 = "";
 $msg2 = "";
@@ -26,7 +25,7 @@ if (isset($_POST['teajoin_submit'])) {
             if (move_uploaded_file($source, $des)) {
                 $path = "teapic/" . $source1;
                 $msg1 = "image uploaded.....";
-                $qry = "insert into tea values('','$teacher_id','$name','$date','$gende','$mail','$pass','$mobil','$idn','$branc','$path')";
+                $qry = "insert into tea values(Null,'$teacher_id','$name','$date','$gende','$mail','$pass','$mobil','$idn','$branc','$path')";
                 $res = mysqli_query($cont, $qry);
                 if (mysqli_affected_rows($cont) > 0) {
 
